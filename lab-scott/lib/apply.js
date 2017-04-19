@@ -2,15 +2,10 @@
 
 module.exports = exports = {};
 
-function Planet(name, numFromSol){
-  this.name = name;
-  this.numFromSol = numFromSol;
-}
+exports.GasPlanet = function(pType){
+  this.type = pType;
+};
 
-function GasPlanet(name, numFromSol){
-  Planet.apply(this, [name, numFromSol]);
-  this.type = 'gas';
-}
-
-let saturn = new GasPlanet('Saturn', 6);
-console.log(saturn);
+exports.doApply = function(planet){
+  exports.GasPlanet.apply(planet, ['gas']);
+};

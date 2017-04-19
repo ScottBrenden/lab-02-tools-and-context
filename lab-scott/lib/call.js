@@ -7,10 +7,15 @@ function Planet(name, numFromSol) {
   this.numFromSol = numFromSol;
 }
 
-function RockPlanet(name, numFromSol){
-  Planet.call(this, name, numFromSol);
-  this.type = 'rock';
+function RockPlanet(pType){
+  this.type = pType;
 }
 
-let earth = new RockPlanet('Earth', 3);
-console.log(earth);
+exports.doCall = function(planet){
+  RockPlanet.call(planet, 'rock');
+};
+
+exports.earth  = new Planet('Earth', 3);
+
+
+// console.log(exports.earth);
