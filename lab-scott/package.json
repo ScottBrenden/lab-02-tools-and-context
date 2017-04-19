@@ -1,0 +1,29 @@
+{
+  "name": "lab-scott",
+  "version": "1.0.0",
+  "description": "lab2",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "index": "node index.js",
+    "lint": "eslint ./lib",
+    "build": "npm run lint && npm run test"
+  },
+  "author": "scott",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottBrenden/lab-02-tools-and-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ScottBrenden/lab-02-tools-and-context/issues"
+  },
+  "homepage": "https://github.com/ScottBrenden/lab-02-tools-and-context#readme"
+}
