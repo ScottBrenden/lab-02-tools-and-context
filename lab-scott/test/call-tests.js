@@ -1,12 +1,12 @@
 'use strict';
 
-const calls = require('../lib/call.js');
 const assert = require('assert');
+const calls = require('../lib/call.js');
 
 describe('call.js', function(){
-  describe('#planet', function(){
+  describe('#RockPlanet', function(){
     it('earth should be a rock planet', function(){
-      assert.equal(calls.Planet('Earth', 3).name, 'Earth');
+      assert.equal(calls.RockPlanet('Earth', 3).name, 'Earth');
     });
   });
 });
